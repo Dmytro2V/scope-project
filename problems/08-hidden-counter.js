@@ -16,6 +16,11 @@ hidden2(); // returns 1
 ***********************************************************************/
 
 // your code here!
+let hiddenCounter = () => {
+  counter = 1;
+  return () => counter++;
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

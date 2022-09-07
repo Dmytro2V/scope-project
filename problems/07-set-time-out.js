@@ -19,6 +19,14 @@ funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 ***********************************************************************/
 
 // your code here!
+let funcTimer = (time, func) => {
+  let secs = time /1000;
+  for (let i = secs; i > 0; i--){
+    global.setTimeout(() => console.log(i), time - i*1000 )
+  }
+  global.setTimeout(func,time)
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

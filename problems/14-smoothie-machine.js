@@ -23,6 +23,20 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // your code here
+const smoothieMachine = (...params1) => {
+  let paramsAccum = params1
+  let initString = "I'm having a smoothie with "
+
+  return  (...params2) => 
+    {
+      paramsAccum.push(...params2)
+
+      let string2 = paramsAccum.join(' and ')
+ 
+      return initString + string2; 
+    }
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

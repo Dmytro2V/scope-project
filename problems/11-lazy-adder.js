@@ -24,6 +24,19 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 
 // your code here
 
+function lazyAdder(firstNum) {
+  function fTwo(secondNum) {
+    function fThree(thirdNum) {
+
+      return thirdNum + secondNum + firstNum;
+    }
+    
+    return fThree
+  }
+
+  return fTwo
+}
+// const lazyAdder = firstNum => secondNum => thirdNum => thirdNum + secondNum + firstNum
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

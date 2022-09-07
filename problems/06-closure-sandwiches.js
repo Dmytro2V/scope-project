@@ -18,6 +18,14 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 
 // your code here!
+const sandwichMaker = () => {
+  let sandwichRecipe = "One sandwich with tomato";
+
+  const recipeAddIngred = ingred => sandwichRecipe += " and " + ingred;
+
+  return recipeAddIngred;
+
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
